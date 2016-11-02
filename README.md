@@ -2,7 +2,7 @@
 
 This project implements an [Atom package transpiler]() that transpiles your package's files with Babel 6.
 
-## Use
+## Usage
 
 1. Install the package
 2. Add an `atomTranspilers` entry to your `package.json`
