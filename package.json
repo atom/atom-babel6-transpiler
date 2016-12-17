@@ -1,6 +1,6 @@
 {
   "name": "atom-babel6-transpiler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A transpiler for Atom packages that processes code with Babel",
   "main": "lib/index.js",
   "repository": {
@@ -10,7 +10,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["atom", "babel", "transpile", "transpiler"],
+  "keywords": [
+    "atom",
+    "babel",
+    "transpile",
+    "transpiler"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "babel-core": "6.x"
