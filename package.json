@@ -1,6 +1,6 @@
 {
   "name": "atom-babel6-transpiler",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A transpiler for Atom packages that processes code with Babel",
   "main": "lib/index.js",
   "repository": {
