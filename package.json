@@ -17,7 +17,7 @@
     "transpiler"
   ],
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "babel-core": "6.x"
   }
 }
