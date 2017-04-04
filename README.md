@@ -10,9 +10,9 @@ This project implements an [Atom package transpiler]() that transpiles your pack
 
 In detail:
 
-**1.** First, install the package and its peer dependency, babel-core, from the npm registry:
+**1.** First, install the package from the npm registry:
 
-    npm install --save atom-babel6-transpiler babel-core
+    npm install --save atom-babel6-transpiler
 
 **2.** Next, modify your `package.json` to include a reference to the transpiler for any files you want Babel to process as described [in the Atom Flight Manual](). For example, to process every file ending in `.js` in your package, you could use:
 
