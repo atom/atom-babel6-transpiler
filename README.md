@@ -40,7 +40,7 @@ and then create a [`.babelrc` file](http://babeljs.io/docs/usage/babelrc/) to co
 }
 ```
 
-You may also specify options in your `package.json` inside the optional `options` object; the subkey `babel`, if it exists, will be passed [as options to `babel.transform`](http://babeljs.io/docs/usage/api/#babeltransformcode-optionsdocsusageoptions). Note that you need to add the `"babelrc": false` option to the settings to prevent Babel from bringing in a user's `.babelrc` when trying to build your package.
+You may also specify options in your `package.json` inside the optional `options` object; the subkey `babel`, if it exists, will be passed [as options to `babel.transform`](http://babeljs.io/docs/usage/api/#babeltransformcode-optionsdocsusageoptions). Note that if you don't want Babel to search up the directory hierarchy for a `.babelrc` file, you need to add the `"babelrc": false` option to the settings. Otherwise Babel may mistakenly use a user's `.babelrc` from elsewhere on the filesystem when trying to build your package.
 
 ```javascript
 {
