@@ -34,24 +34,25 @@ In detail:
 
 and then create a [`.babelrc` file](http://babeljs.io/docs/usage/babelrc/) to configure Babel to use them:
 
-```javascript
+```json
 {
   "presets": ["es2015", "react"]
 }
 ```
 
-You may also specify options in your `package.json` inside the optional `options` object; the subkey `babel`, if it exists, will be passed [as options to `babel.transform`](http://babeljs.io/docs/usage/api/#babeltransformcode-optionsdocsusageoptions).
+You may also specify options in your `package.json` inside the optional `options` object; the subkey `babel`, if it exists, will be passed [as options to `babel.transform`](http://babeljs.io/docs/usage/api/#babeltransformcode-optionsdocsusageoptions). Note that you need to add the `"babelrc": false` option to the settings to prevent Babel from bringing in a user's `.babelrc` when trying to build your package.
 
 ```javascript
 {
-  ...
+  // ...
   "atomTranspilers": [
     {
       "glob": "**/*.js",
       "transpiler": "atom-babel6-transpiler",
       "options": {
         "babel": {
-          "presets": ["es2015", "react"]
+          "presets": ["es2015", "react"],
+          "babelrc": false
         }
       }
     }
