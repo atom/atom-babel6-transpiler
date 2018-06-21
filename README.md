@@ -66,7 +66,7 @@ You may specify the following options as values of the `options` object in your 
 
 |Option|Default|Description|
 |--:|---|---|
-|`setBabelEnv`|`true`|Sets the `BABEL_ENV` environment variable to `"development"` when `atom.inDevMode()` or `atom.inSpecMode()` is true and `"production"` otherwise. Any value other than boolean `false` enables this feature. The feature returns `BABEL_ENV` to its prior value after transpilation finishes.|
+|`setBabelEnv`|`false`, `true` or a string|Sets the `BABEL_ENV` environment variable. When `true`, sets it to `"development"` when `atom.inDevMode()` or `atom.inSpecMode()` is true and `"production"` otherwise. When given as a string, uses the value of the environment variable of that name instead. The feature returns `BABEL_ENV` to its prior value after transpilation finishes.|
 |`babel`|`{}`|Options to pass as the second argument to `babel.transform` (the same options you can put in a `.babelrc`).|
 |`cacheKeyFiles`|`[]`|An array of files to include when determining whether or not to use the cache. For example, to force a recompile anytime your `.babelrc` changes, add `.babelrc` to this array.|
 
