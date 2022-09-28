@@ -1,4 +1,5 @@
-# atom-babel6-transpiler
+##### Atom and all repositories under Atom will be archived on December 15, 2022. Learn more in our [official announcement](https://github.blog/2022-06-08-sunsetting-atom/)
+ # atom-babel6-transpiler
 
 This project implements an [Atom package transpiler]() that transpiles your package's files with Babel 6.
 
